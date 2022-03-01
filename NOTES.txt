@@ -1,0 +1,32 @@
+==== SYS-PARKING 1.0 ====
+
+Bem vindo ao sistema de estacionamento sys-parking 1.0
+
+REGRAS:
+O estacinamento conta com 200 vagas 100 no subsolo e 100 no primeiro andar
+
+O agente de portaria deve registrar os dados sobre o veículo na sua entrada ao estacionamento:
+    ->  CPF do motorista
+    ->  Placa
+    ->  Andar de estacionamento
+    ->  Número da vaga
+    ->  Nome do manobrista
+
+    Obs: O sistema deverá ser capaz de gerar um ticket único para o veículo no 
+         momento de sua liberação na catraca, o horário em que o veículo é liberado
+         para o manobrista deve ser registrado também assim como seu nome.
+
+Para a retirada do veículo o motorista deve confirmar seu CPF e Ticket ao agente
+de portaria então o sistema gera um documento com o valor baseado no tempo de
+estacionamento e no valor da hora estacionada (R$5,00), na realização do pagamento
+o ticket é recolhido e destruído no sistema.
+
+Nenhum dado deverá ser persistido, é recomendado o uso do Redis 
+
+Happy Coding >,< by HeadMaster
+
+
+
+
+
+
