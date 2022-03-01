@@ -9,8 +9,11 @@ app = Flask(__name__)
 api = Api(app)
 prkLt = ParkingLot()
 
+# TODO: Estudar a junção das duas classes Vehicle() e VehicleOps()
+# TODO: Existe uma redundância de nomes entre as classes Vehicle(src.vehicle) e Vehicle(api.py)
+# https://flask-restful.readthedocs.io/en/latest/quickstart.html#endpoints
 class Vehicle(Resource):
-    # Post method is equivalent to park vehicle
+    # Post method is equivalent to park vehicle 
     def post(self):
         data = request.json
         try:

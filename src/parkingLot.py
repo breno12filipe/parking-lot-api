@@ -30,9 +30,9 @@ class ParkingLot():
     def verifyVehicleObject(self, license_plate):
         for vehicle in self.parking_lot_vacancies:
             if license_plate == vehicle.license_plate:
-                return False
-            else:
                 return True
+            else:
+                return False
         
     def returnParkingLot(self):
         for vehicle in self.parking_lot_vacancies:
