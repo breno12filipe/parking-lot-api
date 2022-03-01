@@ -21,7 +21,8 @@ de portaria então o sistema gera um documento com o valor baseado no tempo de
 estacionamento e no valor da hora estacionada (R$5,00), na realização do pagamento
 o ticket é recolhido e destruído no sistema.
 
-Nenhum dado deverá ser persistido, é recomendado o uso do Redis 
+Nenhum dado deverá ser persistido, os dados ficam salvos apenas enquanto a api 
+está rodando
 
 Happy Coding >,< by HeadMaster
 
